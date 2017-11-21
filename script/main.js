@@ -1,5 +1,6 @@
 var lat;
 var lon;
+var temp;
 
 jQuery(document).ready(function(){
 "use strict";
@@ -15,6 +16,7 @@ jQuery(document).ready(function(){
     else {
         $(".location").html("Can't locate your location");
     }
+    
 
 });
 
@@ -27,7 +29,7 @@ function Weather(lat,lon){
 
           $(".location").text(data.name);
             $(".weathercasting").text(data.weather[0].main);
-            var temp = data.main.temp;
+            temp = data.main.temp;
             $(".temperature").text(temp +" ° C");
             $("#illustration").html("<img src='"+ data.weather[0].icon+"' alt='' >");
         }

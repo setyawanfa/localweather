@@ -25,6 +25,13 @@ body{
   padding: 30px;
 }
 
+.location{
+  font-size: 14px;
+}
+.weathercasting{
+  font-size: 13px;
+}
+
 #illustration{
   height: max-content;
   width: max-content;
